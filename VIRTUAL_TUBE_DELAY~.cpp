@@ -454,8 +454,8 @@ public:
             lengR = 1;
 
         
-        int delayMillisecondsL = lengL/0.3438;  // time delay
-        int delayMillisecondsR = lengR/0.3438;  // time delay
+        int delayMillisecondsL = lengL/0.345;  // time delay
+        int delayMillisecondsR = lengR/0.345;  // time delay
         
         // number of samples = delay time * f
         int delaySamplesL = (int)((float)delayMillisecondsL * 44.1f); // assumes 44100 Hz sample rate
@@ -649,8 +649,8 @@ public:
         double length_totL = 2*lengRefL;
         double length_totR = 2*lengRefR;
         
-        int delayMillisecondsRefL = (2*lengRefL)/0.3438;  // time delay
-        int delayMillisecondsRefR = (2*lengRefR)/0.3438;  // time delay
+        int delayMillisecondsRefL = (2*lengRefL)/0.345;  // time delay
+        int delayMillisecondsRefR = (2*lengRefR)/0.345;  // time delay
         
         // number of samples = delay time * f
         int delaySamplesRefL = (int)((float)delayMillisecondsRefL * 44.1f); // assumes 44100 Hz sample rate
